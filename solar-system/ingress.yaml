@@ -28,7 +28,7 @@ metadata:
   name: myapp
   namespace: solar-system
 spec:
-  ingressClassName: external-nginx
+  ingressClassName: nginx
   rules:
     - host: k8s-ingress-ingressn-e1da85ef86-a23274f163d79e7f.elb.us-east-2.amazonaws.com
       http:
