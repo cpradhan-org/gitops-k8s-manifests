@@ -30,7 +30,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: k8s-ingress-ingressn-e1da85ef86-a23274f163d79e7f.elb.us-east-2.amazonaws.com
+    - host: myapp.example.com
       http:
         paths:
           - path: /
