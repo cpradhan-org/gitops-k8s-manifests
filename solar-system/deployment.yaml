@@ -14,11 +14,11 @@ spec:
       labels:
         app: solar-system
     spec:
-      imagePullSecrets:
-      - name: my-ecr-registry-key
+      # imagePullSecrets:
+      # - name: my-ecr-registry-key
       containers:
       - name: solar-system
-        image: 400014682771.dkr.ecr.us-east-2.amazonaws.com/orbit-engine:3e906e3be059342b1916f020c034344fb267ddca
+        image: chinmayapradhan/orbit-engine:e7a7eec18b2ab36656bd2783b73880c2c3b35686
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
