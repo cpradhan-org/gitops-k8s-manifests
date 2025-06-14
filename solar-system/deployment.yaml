@@ -18,7 +18,7 @@ spec:
       # - name: my-ecr-registry-key
       containers:
       - name: solar-system
-        image: chinmayapradhan/orbit-engine:e7a7eec18b2ab36656bd2783b73880c2c3b35686
+        image: chinmayapradhan/orbit-engine:0a6325843bd4ad9e21ca6bb9bdcb65224a5bdf46
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
