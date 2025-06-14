@@ -1,36 +1,16 @@
-apiVersion: networking.k8s.io/v1
-kind: Ingress
-metadata:
-  name: myapp
-  namespace: solar-system
-  annotations:
-    alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/healthcheck-path: /health
-spec:
-  ingressClassName: alb
-  rules:
-    - host: myapp.com
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: solar-system
-                port:
-                  number: 3000
-
-# ---
 # apiVersion: networking.k8s.io/v1
 # kind: Ingress
 # metadata:
 #   name: myapp
 #   namespace: solar-system
+#   annotations:
+#     alb.ingress.kubernetes.io/scheme: internet-facing
+#     alb.ingress.kubernetes.io/target-type: ip
+#     alb.ingress.kubernetes.io/healthcheck-path: /health
 # spec:
-#   ingressClassName: nginx
+#   ingressClassName: alb
 #   rules:
-#     - host: myapp.example.com
+#     - host: myapp.com
 #       http:
 #         paths:
 #           - path: /
@@ -40,3 +20,23 @@ spec:
 #                 name: solar-system
 #                 port:
 #                   number: 3000
+
+# # ---
+# # apiVersion: networking.k8s.io/v1
+# # kind: Ingress
+# # metadata:
+# #   name: myapp
+# #   namespace: solar-system
+# # spec:
+# #   ingressClassName: nginx
+# #   rules:
+# #     - host: myapp.example.com
+# #       http:
+# #         paths:
+# #           - path: /
+# #             pathType: Prefix
+# #             backend:
+# #               service:
+# #                 name: solar-system
+# #                 port:
+# #                   number: 3000
