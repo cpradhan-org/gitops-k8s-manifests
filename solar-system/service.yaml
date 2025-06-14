@@ -8,6 +8,6 @@ spec:
     app: solar-system
   ports:
   - port: 3000
-    targetPort: 30000
+    targetPort: 3000
   type: LoadBalancer
   
