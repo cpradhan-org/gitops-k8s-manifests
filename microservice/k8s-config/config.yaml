@@ -14,6 +14,8 @@ spec:
     metadata:
       labels: 
         app: emailservice
+      # annotations:
+      #   consul.hashicorp.com/connect-inject: 'true'
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -84,6 +86,9 @@ spec:
     metadata:
       labels:
         app: recommendationservice
+      annotations:
+        consul.hashicorp.com/connect-inject: 'true'
+        consul.hashicorp.com/connect-service-upstreams: 'productcatalogservice:3550'
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5
@@ -108,7 +113,7 @@ spec:
         - name: PORT 
           value: "8080"
         - name: PRODUCT_CATALOG_SERVICE_ADDR
-          value: "productcatalogservice:3550"
+          value: "localhost:3550"
         - name: DISABLE_PROFILER
           value: "1"
         readinessProbe:

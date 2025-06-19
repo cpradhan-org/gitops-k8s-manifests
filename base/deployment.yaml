@@ -18,7 +18,7 @@ spec:
       # - name: my-ecr-registry-key
       containers:
       - name: solar-system
-        image: chinmayapradhan/orbit-engine:5259052a69545eda02f7aa72933801740901e74d
+        image: solar-system
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
@@ -27,4 +27,3 @@ spec:
         envFrom:
         - secretRef:
             name: mongo-db-creds
-
