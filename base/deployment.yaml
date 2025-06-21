@@ -14,8 +14,7 @@ spec:
       labels:
         app: solar-system
     spec:
-      # imagePullSecrets:
-      # - name: my-ecr-registry-key
+      serviceAccountName: solar-app-sa
       containers:
       - name: solar-system
         image: solar-system
