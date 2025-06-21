@@ -7,5 +7,5 @@ resources:
 
 images:
   - name: solar-system
-    newName: chinmayapradhan/orbit-engine
-    newTag: 5259052a69545eda02f7aa72933801740901e74d
+    newName: 400014682771.dkr.ecr.us-east-2.amazonaws.com/solar-system
+    newTag: latest
