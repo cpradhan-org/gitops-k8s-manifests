@@ -1,11 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: solar-system
-
 resources:
   - ../../base
-
 images:
   - name: solar-system
     newName: 400014682771.dkr.ecr.us-east-2.amazonaws.com/solar-system
-    newTag: latest
+    newTag: eb24440ab8a6edcef44854fe429735e43ebdf4a1
