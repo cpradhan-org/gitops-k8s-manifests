@@ -6,4 +6,4 @@ resources:
 images:
   - name: solar-system
     newName: 400014682771.dkr.ecr.us-east-2.amazonaws.com/solar-system
-    newTag: 1c86cb98720c4b1bd9d9f0d7e3c9fc3b8b438e7a
+    newTag: a334c0aab9c422f68a0fce331d8bf321308c9e9a
