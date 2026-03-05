@@ -5,5 +5,5 @@ resources:
   - ../../base
 images:
   - name: solar-system
-    newName: 400014682771.dkr.ecr.us-east-2.amazonaws.com/solar-system
-    newTag: a334c0aab9c422f68a0fce331d8bf321308c9e9b
+    newName: chinmayapradhan/orbit-engine
+    newTag: 5259052a69545eda02f7aa72933801740901e74d
