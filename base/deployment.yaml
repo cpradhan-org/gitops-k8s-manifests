@@ -14,7 +14,7 @@ spec:
       labels:
         app: solar-system
     spec:
-      serviceAccountName: solar-app-sa
+      # serviceAccountName: solar-app-sa
       containers:
       - name: solar-system
         image: solar-system
